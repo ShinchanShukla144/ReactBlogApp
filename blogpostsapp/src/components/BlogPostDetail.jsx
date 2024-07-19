@@ -9,11 +9,11 @@ function BlogPostDetail() {
 
     return (
         <div>
-            <div class="card">
+            <div class="card" >
                 {/* <h1>hello</h1> */}
-                <img src={urlToImage} class="card-img-top" alt="..."/>
+                <img src={urlToImage} class="card-img-top" alt="image.png"/>
                     <div class="card-body">
-                        <p class="card-text">{content}</p>
+                        <p class="card-text" className='singleCard'>{content}</p>
                     </div>
             </div>
         </div>

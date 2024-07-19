@@ -10,7 +10,7 @@ function BlogPostList() {
 
     async function getNewsAPIData() {
         setLoading(true)
-        await axios.get('https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=1800bf318f3b461781a8abc7f12f1215')
+        await axios.get(`https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
             .then(res => {
                 setPosts(res.data.articles)
             })
