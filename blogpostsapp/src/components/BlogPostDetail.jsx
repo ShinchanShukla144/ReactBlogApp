@@ -4,8 +4,8 @@ import { useLoaderData } from 'react-router-dom'
 function BlogPostDetail() {
 
     const data = useLoaderData()
-    console.log(data);
-    const {urlToImage, content} = data.articles[0]
+    console.log(data.articles);
+    const {urlToImage, content} = data.articles[1]
 
     return (
         <div>

@@ -6,7 +6,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import BlogPostList from './components/BlogPostList';
 import BlogPostDetail from './components/BlogPostDetail'
 import Layout from './Layout';
-import axios from 'axios';
+//import axios from 'axios';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
