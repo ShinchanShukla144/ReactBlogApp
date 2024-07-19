@@ -5,7 +5,7 @@ function BlogPostDetail() {
 
     const data = useLoaderData()
     console.log(data.articles);
-    const {urlToImage, content} = data.articles[1]
+    const {urlToImage, content} = data.articles[0]
 
     return (
         <div>
