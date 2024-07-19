@@ -14,7 +14,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<Layout />}>
         <Route index element={<BlogPostList />} />
         <Route path='/post/:name' element={<BlogPostDetail />}
-         loader={({params})=> fetch(`https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=1800bf318f3b461781a8abc7f12f1215/${params.articles}`)} />
+         loader={({params})=> fetch(`https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=1800bf318f3b461781a8abc7f12f1215`)} />
       </Route>
     </Route>
 
